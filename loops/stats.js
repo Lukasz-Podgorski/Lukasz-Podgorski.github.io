@@ -131,8 +131,8 @@ function addBuffAmt(name, amount) {
 
 function addExp(name, amount) {
     stats[name].exp += amount;
-    stats[name].talent += amount / 100;
-    totalTalent += amount / 100;
+    stats[name].talent += amount / 10;
+    totalTalent += amount / 10;
     view.requestUpdate("updateStat", name);
 }
 
